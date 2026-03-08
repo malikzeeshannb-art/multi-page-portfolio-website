@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --text-sm: 1.0rem;
+    --text-md: 1.25rem;
+    --text-lg: 1.56rem;
+    --text-xl: 1.95rem;
+
+    --radius-medium: 1rem;
+
+    --space-sm: 0.5rem;
+    --space-md: 1.0rem;
+    --space-lg: 2.0rem;
+    --space-xl: 3.0rem;
+    --space-xxl:3.5rem;
+
+    --primary-color: rgb(23, 118, 235);
+    --secondary-color: rgb(154, 174, 181);
+    --danger-color: rgb(0, 0, 0);
+    --strand-color:rgb(239, 241, 241);
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     color: rgb(0, 0, 0);
+     background-color: white;
+}
+
+.skip-link-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: var(--space-sm);
+    background-color: rgb(175, 248, 167);
+    border-radius: var(--radius-medium);
+    text-decoration: none;
+    transform: translateY(-100%);
+    transition: all 300ms ease;
+    
+}
+.skip-link-btn:focus {
+    transform: translate(0);
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+.page-footer__basic {
+      max-width: 75ch;
+    margin-inline: auto;
+    line-height: 1.5;
+}
+.main-header {
+    max-width: 75ch;
+    margin-inline: auto;
+}
+.main-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--space-sm);
+}
+.logo {
+    font-size: var(--text-xl);
+    color: rgb(255, 111, 0);
+    text-decoration: none;
+}
+.nav-list ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+}
+.nav-list a {
+    text-decoration: none;
+    font-size: var(--text-md);
+    transition: all 300ms ease;
+}
+.nav-list a.active {
+font-weight: bold;    
+color: var(--primary-color);
+}
+.footer-detail {
+    text-align: center;
+    font-size: var(--text-sm);
+    align-items: center;
+    display: block;
+    margin-bottom: var(--space-md); 
+}
+.social-links {
+    display: flex;
+    text-decoration: none;
+    opacity: 0.7;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    align-items: center;
+    justify-content: center;
+}
+.social-links a {
+    text-decoration: none;
+}
