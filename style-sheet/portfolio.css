@@ -74,7 +74,8 @@
 }
 
 .card__button {
-  display: inline-block;
+  display: block;
+  text-align: center;
   border-radius: 8px;
   padding: 0.6rem 1rem;
   margin: 0.75rem auto 1rem;
