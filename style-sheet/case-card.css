@@ -57,6 +57,7 @@
 .btn--highlight-secondary {
   background: linear-gradient(90deg, #ff91d1, var(--color-accent));
   color: #07101a;
+  
 }
 
 .btn:hover {
@@ -74,6 +75,8 @@
   display: block;
   align-items: center;
   margin: 1rem auto 0;
+  text-decoration: none;
+  text-align: center;
 }
 
 .project-overview, .project-details-section, .development-process, .challenges-solutions, .results-impact {
@@ -154,3 +157,8 @@ p {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 22px 60px rgba(6,10,15,0.7), 0 0 18px rgba(127,211,255,0.04);
 }
+
+.future-improvements {
+  margin-top: 0.5rem;
+}
+
