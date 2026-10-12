@@ -1,72 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Zeeshan — Portfolio</title>
-        <link rel="stylesheet" href="style-sheet/globel.css">
-        <link rel="stylesheet" href="style-sheet/portfolio.css">
-    </head>
-    <body>
-        <a class="skip-link-btn" href="#main-content">Skip to main content</a>
-        <header class="main-header">
-            <div class="main-header-container">
-                <a href="index.html" class="logo">Zeeshan's Portfolio</a>
-                <nav class="nav-list" role="navigation" aria-label="Main navigation">
-                    <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="index.html" class="active">Portfolio</a></li>
-                    <li><a href="case-card.html">Case Card</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main class="main-content" id="main-content">
-            <section class="section section-intro section--highlight">
-            <h1 class="section__section-title">Welcome to Zeeshan's Portfolio</h1>
-            <p class="intro-section-detail">My name is Zeeshan. I'm a front-end web developer and I've worked on a variety of projects including personal portfolios, salon websites, and healthcare service pages. I started working in 2024 and continue learning new techniques. Below are some projects I built during this time.</p>
-            </section>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Zeeshan — Portfolio (Luxury)</title>
 
-            <section class="section project__cards" aria-labelledby="projects-heading">
-                <h2 id="projects-heading" class="visually-hidden">Projects</h2>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
-                <div class="card">
-                    <img class="card__image" src="images/first-card.png" alt="Screenshot: Personal portfolio project" decoding="async" loading="lazy">
-                    <h2 class="card__title">Personal Portfolio</h2>
-                    <p class="card__description">A personal portfolio website showcasing skills, projects, and experience as a front-end developer.</p>
-                    <a class="card__button card__button--highlight" href="case-card.html">View Project</a>
-                </div>
+    <link rel="stylesheet" href="style-sheet/globel.css">
+    <link rel="stylesheet" href="style-sheet/portfolio.css">
+  </head>
+  <body>
+    <a class="skip-link-btn" href="#main-content">Skip to main content</a>
 
-                <div class="card">
-                    <img class="card__image" src="images/second-card.png" alt="Screenshot: Contact form project" decoding="async" loading="lazy">
-                    <h2 class="card__title">Contact Form</h2>
-                    <p class="card__description">A contact and appointment booking form built for a healthcare center — users can book an appointment quickly and receive confirmation messages.</p>
-                    <a class="card__button card__button--highlight" href="contact.html">View Project</a>
-                </div>
+    <header class="main-header" role="banner">
+      <div class="main-header-container">
+        <a href="index.html" class="logo">Zeeshan<span style="font-size:0.8rem; color:var(--color-highlight); margin-left:6px;">Portfolio</span></a>
 
-                <div class="card">
-                    <img class="card__image" src="images/third-card.png" alt="Screenshot: Salon website project" decoding="async" loading="lazy">
-                    <h2 class="card__title">Salon Website</h2>
-                    <p class="card__description">A salon website built with HTML, CSS, and JavaScript where clients can view services and book appointments.</p>
-                    <a class="card__button card__button--highlight" href="case-card.html">View Project</a>
-                </div>
+        <nav class="nav-list" role="navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="active">Portfolio</a></li>
+            <li><a href="case-card.html">Case Card</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-                <div class="card">
-                    <img class="card__image" src="images/fourth-card.png" alt="Screenshot: Restaurant website project" decoding="async" loading="lazy">
-                    <h2 class="card__title">Restaurant Website</h2>
-                    <p class="card__description">A restaurant site where customers can view the menu and place online orders.</p>
-                    <a class="card__button card__button--highlight" href="case-card.html">View Project</a>
-                </div>
-            </section>
-        </main>
-        <footer class="page-footer page-footer__basic">
-            <span class="footer-detail">© 2026 — Contact me on social media:</span>
-            <div class="social-links">
-            <a href="https://www.linkedin.com/in/zeeshan-ali-9a0b4b1b5/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-             <a href="https://www.facebook.com/zeeshan.ali.568/" target="_blank" rel="noopener noreferrer">Facebook</a>
-              <a href="https://www.instagram.com/zeeshan_ali_47/" target="_blank" rel="noopener noreferrer">Instagram</a>
-               <a href="https://www.twitter.com/zeeshan_ali_47/" target="_blank" rel="noopener noreferrer">Twitter</a>
-            </div>
-        </footer>
-    </body>
+    <main class="main-content container" id="main-content">
+      <section class="section section-intro">
+        <h1 class="section__section-title">Welcome to Zeeshan’s Portfolio</h1>
+        <p class="intro-section-detail">I’m Zeeshan — a front-end designer focused on refined interfaces, performance and accessible experiences. Below you’ll find a curated selection of projects that reflect clean aesthetics and thoughtful structure.</p>
+      </section>
+
+      <section class="section project__cards" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="visually-hidden">Projects</h2>
+
+        <div class="card">
+          <img class="card__image" src="images/first-card.png" alt="Screenshot: Personal portfolio project" decoding="async" loading="lazy">
+          <h2 class="card__title">Personal Portfolio</h2>
+          <p class="card__description">A minimalist, performance-minded portfolio built with semantic HTML and a reusable CSS system.</p>
+          <a class="card__button card__button--highlight" href="case-card.html" aria-label="View personal portfolio case study">View Project</a>
+        </div>
+
+        <div class="card">
+          <img class="card__image" src="images/second-card.png" alt="Screenshot: Contact form project" decoding="async" loading="lazy">
+          <h2 class="card__title">Contact Form</h2>
+          <p class="card__description">A polished contact/appointment form with clear validation and accessible fields.</p>
+          <a class="card__button card__button--highlight" href="contact.html" aria-label="View contact form project">View Project</a>
+        </div>
+
+        <div class="card">
+          <img class="card__image" src="images/third-card.png" alt="Screenshot: Salon website project" decoding="async" loading="lazy">
+          <h2 class="card__title">Salon Website</h2>
+          <p class="card__description">A salon site designed to convert visitors with an elegant booking flow.</p>
+          <a class="card__button card__button--highlight" href="case-card.html">View Project</a>
+        </div>
+
+        <div class="card">
+          <img class="card__image" src="images/fourth-card.png" alt="Screenshot: Restaurant website project" decoding="async" loading="lazy">
+          <h2 class="card__title">Restaurant Website</h2>
+          <p class="card__description">A restaurant UI with menu highlights and ordering-focused components.</p>
+          <a class="card__button card__button--highlight" href="case-card.html">View Project</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer page-footer__basic" role="contentinfo">
+      <span class="footer-detail">© 2026 — Contact me on social media:</span>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/zeeshan-ali-9a0b4b1b5/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.facebook.com/zeeshan.ali.568/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/zeeshan_ali_47/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.twitter.com/zeeshan_ali_47/" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </div>
+    </footer>
+  </body>
 </html>

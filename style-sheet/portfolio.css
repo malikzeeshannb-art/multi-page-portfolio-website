@@ -1,85 +1,103 @@
-
 .main-content {
-    max-width: 75ch;
-    margin-inline: auto;
-    padding: var(--space-lg) var(--space-sm);
-    min-height: 800px;
+  max-width: 75ch;
+  margin-inline: auto;
+  padding: var(--space-lg) var(--space-sm);
+  min-height: 720px;
+  color: var(--color-muted);
 }
-                                         /*--footer section --*/
-
-
 
 .section {
-    max-width: 70ch;
-    margin-inline: auto;
-    line-height:1.6;
-    margin-bottom: var(--space-lg);
+  max-width: 70ch;
+  margin-inline: auto;
+  line-height: 1.8;
+  margin-bottom: var(--space-lg);
 }
+
 .section-intro {
-padding: 0 var(--space-sm);
-border-radius: var(--radius-medium);
-    border: none;
+  padding: var(--space-md) var(--space-sm);
+  border-radius: var(--radius-medium);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 12px 40px rgba(6,10,15,0.6);
 }
-.section--highlight {
-    background-color: var(--strand-color);
-    box-shadow: 0 4px 6px var(--secondary-color);
-}
+
 .section__section-title {
-    text-align: center;
-    font-size: var(--text-xl);
+  text-align: center;
+  font-size: var(--text-xxl);
+  font-family: var(--font-heading);
+  color: var(--color-accent-2);
+  margin-bottom: var(--space-md);
 }
-                          /*--style for cards--*/
+
 .project__cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-md);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
 }
+
 .card {
-    border: 1px solid var(--danger-color);
-    border-radius: var(--radius-medium);
-    overflow: hidden;
-    padding-bottom: var(--space-md);
-    transition: all 300ms ease;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: var(--radius-medium);
+  overflow: hidden;
+  padding-bottom: var(--space-md);
+  transition: transform 350ms var(--easing), box-shadow 350ms var(--easing);
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 10px 30px rgba(8,12,18,0.6);
 }
+
 .card:hover {
-   box-shadow: 0 5px 10px var(--secondary-color);
-    transform: scale(1.03);
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 26px 60px rgba(6,10,15,0.7);
 }
+
 .card__image {
-    width: 100%;
+  width: 100%;
+  display: block;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-bottom: 1px solid var(--glass-border);
 }
+
 .card__title {
-text-align: center;
+  text-align: center;
+  margin-top: var(--space-sm);
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  color: var(--color-accent-2);
 }
+
 .card__description {
-    padding:  var(--space-md);
-    font-size: var(--text-sm);
+  padding: var(--space-md);
+  font-size: var(--text-sm);
+  color: #c6d3d8;
 }
-                              /*-- style for card button --*/
+
 .card__button {
-    display: block;
-    border-radius: 6px;
-    max-width: fit-content;
-    border: none;
-    padding: var(--space-sm);
-    margin: 0 auto;
-    text-decoration: none;
-     background-color: rgb(255, 255, 255);
-     color: rgb(0, 0, 0);
-     font-size: var(--text-sm);
-    cursor: pointer;
-    transition: all 300ms ease;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  margin: 0.75rem auto 1rem;
+  text-decoration: none;
+  background: linear-gradient(90deg, rgba(200,161,90,0.08), rgba(127,211,255,0.03));
+  color: var(--color-accent-2);
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,0.04);
+  cursor: pointer;
+  transition: all 260ms var(--easing);
 }
+
 .card__button--highlight {
-    background-color: rgb(166, 231, 245);
+  background: linear-gradient(90deg, var(--color-accent), var(--color-highlight));
+  color: #07101a;
+  box-shadow: 0 8px 22px rgba(200,161,90,0.14);
 }
+
 .card__button:hover {
-    background-color: rgb(38, 200, 245);
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px var(--secondary-color);
+  transform: translateY(-3px);
 }
-.card__button:active {
-    transform: translateY(-1px);
-    background-color: black;
-    color: white;
+
+.section-intro p {
+  color: #cfe0e6;
+  font-size: var(--text-md);
 }
