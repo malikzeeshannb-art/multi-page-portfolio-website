@@ -12,9 +12,9 @@ The goal of this project was to understand how professional websites organize pa
 
 This project includes three main pages:
 
-• Portfolio Page – Displays projects and work samples  
-• Case Study Page – Explains a project in detail  
-• Contact Page – Allows visitors to get in touch through a contact form
+• Portfolio Page – Displays projects and work samples (index.html)
+• Case Study Page – Explains a project in detail (case-card.html)
+• Contact Page – Allows visitors to get in touch through a contact form (contact.html)
 
 ---
 
@@ -40,7 +40,7 @@ No JavaScript or frameworks were used because this project focuses on mastering 
 
 ## Project Structure
 
-portfolio.html  
+index.html  
 case-card.html  
 contact.html  
 style-sheet/  
@@ -80,4 +80,3 @@ In the future I plan to:
 ## Author
 
 Zeeshan – Frontend Development Student
-
